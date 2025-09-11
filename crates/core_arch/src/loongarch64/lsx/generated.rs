@@ -1483,7 +1483,6 @@ pub fn lsx_vsll_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslli_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1492,7 +1491,6 @@ pub fn lsx_vslli_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslli_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1501,7 +1499,6 @@ pub fn lsx_vslli_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslli_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1510,7 +1507,6 @@ pub fn lsx_vslli_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslli_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1547,7 +1543,6 @@ pub fn lsx_vsra_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrai_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1556,7 +1551,6 @@ pub fn lsx_vsrai_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrai_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1565,7 +1559,6 @@ pub fn lsx_vsrai_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrai_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1574,7 +1567,6 @@ pub fn lsx_vsrai_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrai_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1611,7 +1603,6 @@ pub fn lsx_vsrar_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrari_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1620,7 +1611,6 @@ pub fn lsx_vsrari_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrari_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1629,7 +1619,6 @@ pub fn lsx_vsrari_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrari_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1638,7 +1627,6 @@ pub fn lsx_vsrari_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrari_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1675,7 +1663,6 @@ pub fn lsx_vsrl_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrli_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1684,7 +1671,6 @@ pub fn lsx_vsrli_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrli_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1693,7 +1679,6 @@ pub fn lsx_vsrli_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrli_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1702,7 +1687,6 @@ pub fn lsx_vsrli_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrli_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1739,7 +1723,6 @@ pub fn lsx_vsrlr_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlri_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1748,7 +1731,6 @@ pub fn lsx_vsrlri_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlri_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1757,7 +1739,6 @@ pub fn lsx_vsrlri_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlri_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1766,7 +1747,6 @@ pub fn lsx_vsrlri_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlri_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1803,7 +1783,6 @@ pub fn lsx_vbitclr_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitclri_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1812,7 +1791,6 @@ pub fn lsx_vbitclri_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitclri_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1821,7 +1799,6 @@ pub fn lsx_vbitclri_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitclri_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1830,7 +1807,6 @@ pub fn lsx_vbitclri_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitclri_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1867,7 +1843,6 @@ pub fn lsx_vbitset_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitseti_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1876,7 +1851,6 @@ pub fn lsx_vbitseti_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitseti_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1885,7 +1859,6 @@ pub fn lsx_vbitseti_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitseti_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1894,7 +1867,6 @@ pub fn lsx_vbitseti_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitseti_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1931,7 +1903,6 @@ pub fn lsx_vbitrev_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitrevi_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -1940,7 +1911,6 @@ pub fn lsx_vbitrevi_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitrevi_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -1949,7 +1919,6 @@ pub fn lsx_vbitrevi_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitrevi_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -1958,7 +1927,6 @@ pub fn lsx_vbitrevi_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitrevi_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -1995,7 +1963,6 @@ pub fn lsx_vadd_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vaddi_bu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2004,7 +1971,6 @@ pub fn lsx_vaddi_bu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vaddi_hu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2013,7 +1979,6 @@ pub fn lsx_vaddi_hu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vaddi_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2022,7 +1987,6 @@ pub fn lsx_vaddi_wu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vaddi_du<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2059,7 +2023,6 @@ pub fn lsx_vsub_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsubi_bu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2068,7 +2031,6 @@ pub fn lsx_vsubi_bu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsubi_hu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2077,7 +2039,6 @@ pub fn lsx_vsubi_hu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsubi_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2086,7 +2047,6 @@ pub fn lsx_vsubi_wu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsubi_du<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2123,7 +2083,6 @@ pub fn lsx_vmax_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_b<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2132,7 +2091,6 @@ pub fn lsx_vmaxi_b<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_h<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2141,7 +2099,6 @@ pub fn lsx_vmaxi_h<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_w<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2150,7 +2107,6 @@ pub fn lsx_vmaxi_w<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_d<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2187,7 +2143,6 @@ pub fn lsx_vmax_du(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_bu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2196,7 +2151,6 @@ pub fn lsx_vmaxi_bu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_hu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2205,7 +2159,6 @@ pub fn lsx_vmaxi_hu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2214,7 +2167,6 @@ pub fn lsx_vmaxi_wu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmaxi_du<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2251,7 +2203,6 @@ pub fn lsx_vmin_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_b<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2260,7 +2211,6 @@ pub fn lsx_vmini_b<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_h<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2269,7 +2219,6 @@ pub fn lsx_vmini_h<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_w<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2278,7 +2227,6 @@ pub fn lsx_vmini_w<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_d<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2315,7 +2263,6 @@ pub fn lsx_vmin_du(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_bu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2324,7 +2271,6 @@ pub fn lsx_vmini_bu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_hu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2333,7 +2279,6 @@ pub fn lsx_vmini_hu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2342,7 +2287,6 @@ pub fn lsx_vmini_wu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vmini_du<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2379,7 +2323,6 @@ pub fn lsx_vseq_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vseqi_b<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2388,7 +2331,6 @@ pub fn lsx_vseqi_b<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vseqi_h<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2397,7 +2339,6 @@ pub fn lsx_vseqi_h<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vseqi_w<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2406,7 +2347,6 @@ pub fn lsx_vseqi_w<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vseqi_d<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2415,7 +2355,6 @@ pub fn lsx_vseqi_d<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_b<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2452,7 +2391,6 @@ pub fn lsx_vslt_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_h<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2461,7 +2399,6 @@ pub fn lsx_vslti_h<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_w<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2470,7 +2407,6 @@ pub fn lsx_vslti_w<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_d<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2507,7 +2443,6 @@ pub fn lsx_vslt_du(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_bu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2516,7 +2451,6 @@ pub fn lsx_vslti_bu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_hu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2525,7 +2459,6 @@ pub fn lsx_vslti_hu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2534,7 +2467,6 @@ pub fn lsx_vslti_wu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslti_du<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2571,7 +2503,6 @@ pub fn lsx_vsle_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_b<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2580,7 +2511,6 @@ pub fn lsx_vslei_b<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_h<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2589,7 +2519,6 @@ pub fn lsx_vslei_h<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_w<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2598,7 +2527,6 @@ pub fn lsx_vslei_w<const IMM_S5: i32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_d<const IMM_S5: i32>(a: m128i) -> m128i {
     static_assert_simm_bits!(IMM_S5, 5);
@@ -2635,7 +2563,6 @@ pub fn lsx_vsle_du(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_bu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2644,7 +2571,6 @@ pub fn lsx_vslei_bu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_hu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2653,7 +2579,6 @@ pub fn lsx_vslei_hu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2662,7 +2587,6 @@ pub fn lsx_vslei_wu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vslei_du<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2671,7 +2595,6 @@ pub fn lsx_vslei_du<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -2680,7 +2603,6 @@ pub fn lsx_vsat_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -2689,7 +2611,6 @@ pub fn lsx_vsat_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2698,7 +2619,6 @@ pub fn lsx_vsat_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -2707,7 +2627,6 @@ pub fn lsx_vsat_d<const IMM6: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_bu<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -2716,7 +2635,6 @@ pub fn lsx_vsat_bu<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_hu<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -2725,7 +2643,6 @@ pub fn lsx_vsat_hu<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -2734,7 +2651,6 @@ pub fn lsx_vsat_wu<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsat_du<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -3359,7 +3275,6 @@ pub fn lsx_vreplve_d(a: m128i, b: i32) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vreplvei_b<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -3368,7 +3283,6 @@ pub fn lsx_vreplvei_b<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vreplvei_h<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -3377,7 +3291,6 @@ pub fn lsx_vreplvei_h<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vreplvei_w<const IMM2: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM2, 2);
@@ -3386,7 +3299,6 @@ pub fn lsx_vreplvei_w<const IMM2: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vreplvei_d<const IMM1: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM1, 1);
@@ -3591,7 +3503,6 @@ pub fn lsx_vand_v(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vandi_b<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3607,7 +3518,6 @@ pub fn lsx_vor_v(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vori_b<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3623,7 +3533,6 @@ pub fn lsx_vnor_v(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vnori_b<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3639,7 +3548,6 @@ pub fn lsx_vxor_v(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vxori_b<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3655,7 +3563,6 @@ pub fn lsx_vbitsel_v(a: m128i, b: m128i, c: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbitseli_b<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3664,7 +3571,6 @@ pub fn lsx_vbitseli_b<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vshuf4i_b<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3673,7 +3579,6 @@ pub fn lsx_vshuf4i_b<const IMM8: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vshuf4i_h<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3682,7 +3587,6 @@ pub fn lsx_vshuf4i_h<const IMM8: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vshuf4i_w<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -3803,7 +3707,6 @@ pub fn lsx_vclz_d(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_b<const IMM4: u32>(a: m128i) -> i32 {
     static_assert_uimm_bits!(IMM4, 4);
@@ -3812,7 +3715,6 @@ pub fn lsx_vpickve2gr_b<const IMM4: u32>(a: m128i) -> i32 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_h<const IMM3: u32>(a: m128i) -> i32 {
     static_assert_uimm_bits!(IMM3, 3);
@@ -3821,7 +3723,6 @@ pub fn lsx_vpickve2gr_h<const IMM3: u32>(a: m128i) -> i32 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_w<const IMM2: u32>(a: m128i) -> i32 {
     static_assert_uimm_bits!(IMM2, 2);
@@ -3830,7 +3731,6 @@ pub fn lsx_vpickve2gr_w<const IMM2: u32>(a: m128i) -> i32 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_d<const IMM1: u32>(a: m128i) -> i64 {
     static_assert_uimm_bits!(IMM1, 1);
@@ -3839,7 +3739,6 @@ pub fn lsx_vpickve2gr_d<const IMM1: u32>(a: m128i) -> i64 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_bu<const IMM4: u32>(a: m128i) -> u32 {
     static_assert_uimm_bits!(IMM4, 4);
@@ -3848,7 +3747,6 @@ pub fn lsx_vpickve2gr_bu<const IMM4: u32>(a: m128i) -> u32 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_hu<const IMM3: u32>(a: m128i) -> u32 {
     static_assert_uimm_bits!(IMM3, 3);
@@ -3857,7 +3755,6 @@ pub fn lsx_vpickve2gr_hu<const IMM3: u32>(a: m128i) -> u32 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_wu<const IMM2: u32>(a: m128i) -> u32 {
     static_assert_uimm_bits!(IMM2, 2);
@@ -3866,7 +3763,6 @@ pub fn lsx_vpickve2gr_wu<const IMM2: u32>(a: m128i) -> u32 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpickve2gr_du<const IMM1: u32>(a: m128i) -> u64 {
     static_assert_uimm_bits!(IMM1, 1);
@@ -3875,7 +3771,6 @@ pub fn lsx_vpickve2gr_du<const IMM1: u32>(a: m128i) -> u64 {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vinsgr2vr_b<const IMM4: u32>(a: m128i, b: i32) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -3884,7 +3779,6 @@ pub fn lsx_vinsgr2vr_b<const IMM4: u32>(a: m128i, b: i32) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vinsgr2vr_h<const IMM3: u32>(a: m128i, b: i32) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -3893,7 +3787,6 @@ pub fn lsx_vinsgr2vr_h<const IMM3: u32>(a: m128i, b: i32) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vinsgr2vr_w<const IMM2: u32>(a: m128i, b: i32) -> m128i {
     static_assert_uimm_bits!(IMM2, 2);
@@ -3902,7 +3795,6 @@ pub fn lsx_vinsgr2vr_w<const IMM2: u32>(a: m128i, b: i32) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vinsgr2vr_d<const IMM1: u32>(a: m128i, b: i64) -> m128i {
     static_assert_uimm_bits!(IMM1, 1);
@@ -4352,7 +4244,6 @@ pub fn lsx_vmuh_du(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsllwil_h_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -4361,7 +4252,6 @@ pub fn lsx_vsllwil_h_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsllwil_w_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -4370,7 +4260,6 @@ pub fn lsx_vsllwil_w_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsllwil_d_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -4379,7 +4268,6 @@ pub fn lsx_vsllwil_d_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsllwil_hu_bu<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -4388,7 +4276,6 @@ pub fn lsx_vsllwil_hu_bu<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsllwil_wu_hu<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -4397,7 +4284,6 @@ pub fn lsx_vsllwil_wu_hu<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsllwil_du_wu<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -4616,7 +4502,6 @@ pub fn lsx_vssrlrn_wu_d(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vfrstpi_b<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -4625,7 +4510,6 @@ pub fn lsx_vfrstpi_b<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vfrstpi_h<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -4648,7 +4532,6 @@ pub fn lsx_vfrstp_h(a: m128i, b: m128i, c: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vshuf4i_d<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -4657,7 +4540,6 @@ pub fn lsx_vshuf4i_d<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbsrl_v<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -4666,7 +4548,6 @@ pub fn lsx_vbsrl_v<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vbsll_v<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -4675,7 +4556,6 @@ pub fn lsx_vbsll_v<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vextrins_b<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -4684,7 +4564,6 @@ pub fn lsx_vextrins_b<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vextrins_h<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -4693,7 +4572,6 @@ pub fn lsx_vextrins_h<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vextrins_w<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -4702,7 +4580,6 @@ pub fn lsx_vextrins_w<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vextrins_d<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -5047,7 +4924,6 @@ pub fn lsx_vfrintrm_d(a: m128d) -> m128d {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2, 3)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vstelm_b<const IMM_S8: i32, const IMM4: u32>(a: m128i, mem_addr: *mut i8) {
     static_assert_simm_bits!(IMM_S8, 8);
@@ -5057,7 +4933,6 @@ pub unsafe fn lsx_vstelm_b<const IMM_S8: i32, const IMM4: u32>(a: m128i, mem_add
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2, 3)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vstelm_h<const IMM_S8: i32, const IMM3: u32>(a: m128i, mem_addr: *mut i8) {
     static_assert_simm_bits!(IMM_S8, 8);
@@ -5067,7 +4942,6 @@ pub unsafe fn lsx_vstelm_h<const IMM_S8: i32, const IMM3: u32>(a: m128i, mem_add
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2, 3)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vstelm_w<const IMM_S8: i32, const IMM2: u32>(a: m128i, mem_addr: *mut i8) {
     static_assert_simm_bits!(IMM_S8, 8);
@@ -5077,7 +4951,6 @@ pub unsafe fn lsx_vstelm_w<const IMM_S8: i32, const IMM2: u32>(a: m128i, mem_add
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2, 3)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vstelm_d<const IMM_S8: i32, const IMM1: u32>(a: m128i, mem_addr: *mut i8) {
     static_assert_simm_bits!(IMM_S8, 8);
@@ -5773,7 +5646,6 @@ pub fn lsx_vsub_q(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vldrepl_b<const IMM_S12: i32>(mem_addr: *const i8) -> m128i {
     static_assert_simm_bits!(IMM_S12, 12);
@@ -5782,7 +5654,6 @@ pub unsafe fn lsx_vldrepl_b<const IMM_S12: i32>(mem_addr: *const i8) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vldrepl_h<const IMM_S11: i32>(mem_addr: *const i8) -> m128i {
     static_assert_simm_bits!(IMM_S11, 11);
@@ -5791,7 +5662,6 @@ pub unsafe fn lsx_vldrepl_h<const IMM_S11: i32>(mem_addr: *const i8) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vldrepl_w<const IMM_S10: i32>(mem_addr: *const i8) -> m128i {
     static_assert_simm_bits!(IMM_S10, 10);
@@ -5800,7 +5670,6 @@ pub unsafe fn lsx_vldrepl_w<const IMM_S10: i32>(mem_addr: *const i8) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vldrepl_d<const IMM_S9: i32>(mem_addr: *const i8) -> m128i {
     static_assert_simm_bits!(IMM_S9, 9);
@@ -5879,7 +5748,6 @@ pub fn lsx_vexth_qu_du(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrotri_b<const IMM3: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM3, 3);
@@ -5888,7 +5756,6 @@ pub fn lsx_vrotri_b<const IMM3: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrotri_h<const IMM4: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -5897,7 +5764,6 @@ pub fn lsx_vrotri_h<const IMM4: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrotri_w<const IMM5: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -5906,7 +5772,6 @@ pub fn lsx_vrotri_w<const IMM5: u32>(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrotri_d<const IMM6: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -5922,7 +5787,6 @@ pub fn lsx_vextl_q_d(a: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -5931,7 +5795,6 @@ pub fn lsx_vsrlni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -5940,7 +5803,6 @@ pub fn lsx_vsrlni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -5949,7 +5811,6 @@ pub fn lsx_vsrlni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -5958,7 +5819,6 @@ pub fn lsx_vsrlni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlrni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -5967,7 +5827,6 @@ pub fn lsx_vsrlrni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlrni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -5976,7 +5835,6 @@ pub fn lsx_vsrlrni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlrni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -5985,7 +5843,6 @@ pub fn lsx_vsrlrni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrlrni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -5994,7 +5851,6 @@ pub fn lsx_vsrlrni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6003,7 +5859,6 @@ pub fn lsx_vssrlni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6012,7 +5867,6 @@ pub fn lsx_vssrlni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6021,7 +5875,6 @@ pub fn lsx_vssrlni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6030,7 +5883,6 @@ pub fn lsx_vssrlni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6039,7 +5891,6 @@ pub fn lsx_vssrlni_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6048,7 +5899,6 @@ pub fn lsx_vssrlni_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6057,7 +5907,6 @@ pub fn lsx_vssrlni_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlni_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6066,7 +5915,6 @@ pub fn lsx_vssrlni_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6075,7 +5923,6 @@ pub fn lsx_vssrlrni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6084,7 +5931,6 @@ pub fn lsx_vssrlrni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6093,7 +5939,6 @@ pub fn lsx_vssrlrni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6102,7 +5947,6 @@ pub fn lsx_vssrlrni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6111,7 +5955,6 @@ pub fn lsx_vssrlrni_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6120,7 +5963,6 @@ pub fn lsx_vssrlrni_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6129,7 +5971,6 @@ pub fn lsx_vssrlrni_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrlrni_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6138,7 +5979,6 @@ pub fn lsx_vssrlrni_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrani_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6147,7 +5987,6 @@ pub fn lsx_vsrani_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrani_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6156,7 +5995,6 @@ pub fn lsx_vsrani_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrani_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6165,7 +6003,6 @@ pub fn lsx_vsrani_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrani_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6174,7 +6011,6 @@ pub fn lsx_vsrani_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrarni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6183,7 +6019,6 @@ pub fn lsx_vsrarni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrarni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6192,7 +6027,6 @@ pub fn lsx_vsrarni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrarni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6201,7 +6035,6 @@ pub fn lsx_vsrarni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vsrarni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6210,7 +6043,6 @@ pub fn lsx_vsrarni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6219,7 +6051,6 @@ pub fn lsx_vssrani_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6228,7 +6059,6 @@ pub fn lsx_vssrani_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6237,7 +6067,6 @@ pub fn lsx_vssrani_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6246,7 +6075,6 @@ pub fn lsx_vssrani_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6255,7 +6083,6 @@ pub fn lsx_vssrani_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6264,7 +6091,6 @@ pub fn lsx_vssrani_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6273,7 +6099,6 @@ pub fn lsx_vssrani_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrani_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6282,7 +6107,6 @@ pub fn lsx_vssrani_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6291,7 +6115,6 @@ pub fn lsx_vssrarni_b_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6300,7 +6123,6 @@ pub fn lsx_vssrarni_h_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6309,7 +6131,6 @@ pub fn lsx_vssrarni_w_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6318,7 +6139,6 @@ pub fn lsx_vssrarni_d_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM4, 4);
@@ -6327,7 +6147,6 @@ pub fn lsx_vssrarni_bu_h<const IMM4: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM5, 5);
@@ -6336,7 +6155,6 @@ pub fn lsx_vssrarni_hu_w<const IMM5: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM6, 6);
@@ -6345,7 +6163,6 @@ pub fn lsx_vssrarni_wu_d<const IMM6: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vssrarni_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM7, 7);
@@ -6354,7 +6171,6 @@ pub fn lsx_vssrarni_du_q<const IMM7: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vpermi_w<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
@@ -6363,7 +6179,6 @@ pub fn lsx_vpermi_w<const IMM8: u32>(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(1)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vld<const IMM_S12: i32>(mem_addr: *const i8) -> m128i {
     static_assert_simm_bits!(IMM_S12, 12);
@@ -6372,7 +6187,6 @@ pub unsafe fn lsx_vld<const IMM_S12: i32>(mem_addr: *const i8) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(2)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub unsafe fn lsx_vst<const IMM_S12: i32>(a: m128i, mem_addr: *mut i8) {
     static_assert_simm_bits!(IMM_S12, 12);
@@ -6430,7 +6244,6 @@ pub fn lsx_vorn_v(a: m128i, b: m128i) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(0)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vldi<const IMM_S13: i32>() -> m128i {
     static_assert_simm_bits!(IMM_S13, 13);
@@ -6845,7 +6658,6 @@ pub fn lsx_vfcmp_sun_s(a: m128, b: m128) -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(0)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrepli_b<const IMM_S10: i32>() -> m128i {
     static_assert_simm_bits!(IMM_S10, 10);
@@ -6854,7 +6666,6 @@ pub fn lsx_vrepli_b<const IMM_S10: i32>() -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(0)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrepli_d<const IMM_S10: i32>() -> m128i {
     static_assert_simm_bits!(IMM_S10, 10);
@@ -6863,7 +6674,6 @@ pub fn lsx_vrepli_d<const IMM_S10: i32>() -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(0)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrepli_h<const IMM_S10: i32>() -> m128i {
     static_assert_simm_bits!(IMM_S10, 10);
@@ -6872,7 +6682,6 @@ pub fn lsx_vrepli_h<const IMM_S10: i32>() -> m128i {
 
 #[inline]
 #[target_feature(enable = "lsx")]
-#[rustc_legacy_const_generics(0)]
 #[unstable(feature = "stdarch_loongarch", issue = "117427")]
 pub fn lsx_vrepli_w<const IMM_S10: i32>() -> m128i {
     static_assert_simm_bits!(IMM_S10, 10);
