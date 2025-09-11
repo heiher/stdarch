@@ -1,10 +1,10 @@
 /*
- * https://gcc.gnu.org/git/?p=gcc.git;a=blob_plain;f=gcc/config/loongarch/lasxintrin.h;hb=61f1001f2f4ab9128e5eb6e9a4adbbb0f9f0bc75
+ * https://gcc.gnu.org/git/?p=gcc.git;a=blob_plain;f=gcc/config/loongarch/lasxintrin.h;hb=6441eb6dc020faae0672ea724dfdb38c6a9bf6a1
  */
 
 /* LARCH Loongson ASX intrinsics include file.
 
-   Copyright (C) 2018-2024 Free Software Foundation, Inc.
+   Copyright (C) 2018-2025 Free Software Foundation, Inc.
 
    This file is part of GCC.
 
@@ -26,6 +26,8 @@
    a copy of the GCC Runtime Library Exception along with this program;
    see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
    <http://www.gnu.org/licenses/>.  */
+
+#include <lsxintrin.h>
 
 #ifndef _GCC_LOONGSON_ASXINTRIN_H
 #define _GCC_LOONGSON_ASXINTRIN_H 1
@@ -58,6 +60,152 @@ typedef long long __m256i __attribute__ ((__vector_size__ (32),
 					  __may_alias__));
 typedef double __m256d __attribute__ ((__vector_size__ (32),
 				       __may_alias__));
+
+/* Add builtin interfaces for 128 and 256 vector conversions.  */
+
+/* Assembly instruction format:	xd, vj.  */
+/* Data types in instruction templates:  V8SF, V4SF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256 __lasx_cast_128_s (__m128 _1)
+{
+  return  (__m256)__builtin_lasx_cast_128_s ((v4f32)_1);
+}
+
+/* Assembly instruction format:	xd, vj.  */
+/* Data types in instruction templates:  V4DF, V2DF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256d __lasx_cast_128_d (__m128d _1)
+{
+  return  (__m256d)__builtin_lasx_cast_128_d ((v2f64)_1);
+}
+
+/* Assembly instruction format:	xd, vj.  */
+/* Data types in instruction templates:  V32QI, V16QI.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256i __lasx_cast_128 (__m128i _1)
+{
+  return  (__m256i)__builtin_lasx_cast_128 ((v2i64)_1);
+}
+
+/* Assembly instruction format:	xd, vj, vk.  */
+/* Data types in instruction templates:  V8SF, V4SF, V4SF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256 __lasx_concat_128_s (__m128 _1, __m128 _2)
+{
+  return  (__m256)__builtin_lasx_concat_128_s ((v4f32)_1, (v4f32)_2);
+}
+
+/* Assembly instruction format:	xd, vj, vk.  */
+/* Data types in instruction templates:  V4DF, V2DF, V2DF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256d __lasx_concat_128_d (__m128d _1, __m128d _2)
+{
+  return  (__m256d)__builtin_lasx_concat_128_d ((v2f64)_1, (v2f64)_2);
+}
+
+/* Assembly instruction format:	xd, vj, vk.  */
+/* Data types in instruction templates:  V32QI, V16QI, V16QI.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256i __lasx_concat_128 (__m128i _1, __m128i _2)
+{
+  return  (__m256i)__builtin_lasx_concat_128 ((v2i64)_1, (v2i64)_2);
+}
+
+/* Assembly instruction format:	vd, xj.  */
+/* Data types in instruction templates:  V4SF, V8SF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m128 __lasx_extract_128_lo_s (__m256 _1)
+{
+  return  (__m128)__builtin_lasx_extract_128_lo_s ((v8f32)_1);
+}
+
+/* Assembly instruction format:	vd, xj.  */
+/* Data types in instruction templates:  V4SF, V8SF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m128 __lasx_extract_128_hi_s (__m256 _1)
+{
+  return  (__m128)__builtin_lasx_extract_128_hi_s ((v8f32)_1);
+}
+
+/* Assembly instruction format:	vd, xj.  */
+/* Data types in instruction templates:  V2DF, V4DF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m128d __lasx_extract_128_lo_d (__m256d _1)
+{
+  return  (__m128d)__builtin_lasx_extract_128_lo_d ((v4f64)_1);
+}
+
+/* Assembly instruction format:	vd, xj.  */
+/* Data types in instruction templates:  V2DF, V4DF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m128d __lasx_extract_128_hi_d (__m256d _1)
+{
+  return  (__m128d)__builtin_lasx_extract_128_hi_d ((v4f64)_1);
+}
+
+/* Assembly instruction format:	vd, xj.  */
+/* Data types in instruction templates:  V16QI, V32QI.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m128i __lasx_extract_128_lo (__m256i _1)
+{
+  return  (__m128i)__builtin_lasx_extract_128_lo ((v4i64)_1);
+}
+
+/* Assembly instruction format:	vd, xj.  */
+/* Data types in instruction templates:  V16QI, V32QI.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m128i __lasx_extract_128_hi (__m256i _1)
+{
+  return  (__m128i)__builtin_lasx_extract_128_hi ((v4i64)_1);
+}
+
+/* Assembly instruction format:	xd, xj, vk.  */
+/* Data types in instruction templates:  V8SF, V8SF, V4SF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256 __lasx_insert_128_lo_s (__m256 _1, __m128 _2)
+{
+  return  (__m256)__builtin_lasx_insert_128_lo_s ((v8f32)_1, (v4f32)_2);
+}
+
+/* Assembly instruction format:	xd, xj, vk.  */
+/* Data types in instruction templates:  V8SF, V8SF, V4SF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256 __lasx_insert_128_hi_s (__m256 _1, __m128 _2)
+{
+  return  (__m256)__builtin_lasx_insert_128_hi_s ((v8f32)_1, (v4f32)_2);
+}
+
+/* Assembly instruction format:	xd, xj, vk.  */
+/* Data types in instruction templates:  V4DF, V4DF, V2DF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256d __lasx_insert_128_lo_d (__m256d _1, __m128d _2)
+{
+  return  (__m256d)__builtin_lasx_insert_128_lo_d ((v4f64)_1, (v2f64)_2);
+}
+
+/* Assembly instruction format:	xd, xj, vk.  */
+/* Data types in instruction templates:  V4DF, V4DF, V2DF.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256d __lasx_insert_128_hi_d (__m256d _1, __m128d _2)
+{
+  return  (__m256d)__builtin_lasx_insert_128_hi_d ((v4f64)_1, (v2f64)_2);
+}
+
+/* Assembly instruction format:	xd, xj, vk.  */
+/* Data types in instruction templates:  V32QI, V32QI, V16QI.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256i __lasx_insert_128_lo (__m256i _1, __m128i _2)
+{
+  return  (__m256i)__builtin_lasx_insert_128_lo ((v4i64)_1, (v2i64)_2);
+}
+
+/* Assembly instruction format:	xd, xj, vk.  */
+/* Data types in instruction templates:  V32QI, V32QI, V16QI.  */
+extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
+__m256i __lasx_insert_128_hi (__m256i _1, __m128i _2)
+{
+  return  (__m256i)__builtin_lasx_insert_128_hi ((v4i64)_1, (v2i64)_2);
+}
 
 /* Assembly instruction format:	xd, xj, xk.  */
 /* Data types in instruction templates:  V32QI, V32QI, V32QI.  */
@@ -3568,11 +3716,11 @@ __m256i __lasx_xvssrln_w_d (__m256i _1, __m256i _2)
 }
 
 /* Assembly instruction format:	xd, xj, xk.  */
-/* Data types in instruction templates:  V32QI, V32QI, V32QI.  */
+/* Data types in instruction templates:  UV32QI, UV32QI, UV32QI.  */
 extern __inline __attribute__((__gnu_inline__, __always_inline__, __artificial__))
 __m256i __lasx_xvorn_v (__m256i _1, __m256i _2)
 {
-  return (__m256i)__builtin_lasx_xvorn_v ((v32i8)_1, (v32i8)_2);
+  return (__m256i)__builtin_lasx_xvorn_v ((v32u8)_1, (v32u8)_2);
 }
 
 /* Assembly instruction format:	xd, i13.  */
