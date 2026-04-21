@@ -120,6 +120,18 @@ impl_vvv!("lsx", lsx_vsrl_b, simdl_shr, m128i, u8x16);
 impl_vvv!("lsx", lsx_vsrl_h, simdl_shr, m128i, u16x8);
 impl_vvv!("lsx", lsx_vsrl_w, simdl_shr, m128i, u32x4);
 impl_vvv!("lsx", lsx_vsrl_d, simdl_shr, m128i, u64x2);
+impl_vvv!("lsx", lsx_vbitclr_b, simdl_bitclr, m128i, u8x16);
+impl_vvv!("lsx", lsx_vbitclr_h, simdl_bitclr, m128i, u16x8);
+impl_vvv!("lsx", lsx_vbitclr_w, simdl_bitclr, m128i, u32x4);
+impl_vvv!("lsx", lsx_vbitclr_d, simdl_bitclr, m128i, u64x2);
+impl_vvv!("lsx", lsx_vbitset_b, simdl_bitset, m128i, u8x16);
+impl_vvv!("lsx", lsx_vbitset_h, simdl_bitset, m128i, u16x8);
+impl_vvv!("lsx", lsx_vbitset_w, simdl_bitset, m128i, u32x4);
+impl_vvv!("lsx", lsx_vbitset_d, simdl_bitset, m128i, u64x2);
+impl_vvv!("lsx", lsx_vbitrev_b, simdl_bitrev, m128i, u8x16);
+impl_vvv!("lsx", lsx_vbitrev_h, simdl_bitrev, m128i, u16x8);
+impl_vvv!("lsx", lsx_vbitrev_w, simdl_bitrev, m128i, u32x4);
+impl_vvv!("lsx", lsx_vbitrev_d, simdl_bitrev, m128i, u64x2);
 
 impl_vuv!("lsx", lsx_vslli_b, simd_shl, m128i, i8x16);
 impl_vuv!("lsx", lsx_vslli_h, simd_shl, m128i, i16x8);

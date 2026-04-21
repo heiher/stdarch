@@ -45,6 +45,24 @@ pub(super) const unsafe fn simdl_andn<T: Copy + const SimdL>(a: T, b: T) -> T {
 
 #[inline(always)]
 #[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simdl_bitclr<T: Copy + const SimdL>(a: T, b: T) -> T {
+    simdl_andn(simdl_shl(simdl_splat(1), b), a)
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simdl_bitrev<T: Copy + const SimdL>(a: T, b: T) -> T {
+    crate::intrinsics::simd::simd_xor(simdl_shl(simdl_splat(1), b), a)
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simdl_bitset<T: Copy + const SimdL>(a: T, b: T) -> T {
+    crate::intrinsics::simd::simd_or(simdl_shl(simdl_splat(1), b), a)
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
 pub(super) const unsafe fn simdl_fms<T: Copy>(a: T, b: T, c: T) -> T {
     let c: T = crate::intrinsics::simd::simd_neg(c);
     crate::intrinsics::simd::simd_fma(a, b, c)
