@@ -57,6 +57,22 @@ pub(super) const unsafe fn simdl_bitrev<T: Copy + const SimdL>(a: T, b: T) -> T 
 
 #[inline(always)]
 #[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simdl_bitsel<T: Copy + const SimdL>(a: T, b: T, c: T) -> T {
+    let f: T = simdl_andn(c, a);
+    let t: T = crate::intrinsics::simd::simd_and(c, b);
+    crate::intrinsics::simd::simd_or(f, t)
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simdl_bitseli<T: Copy + const SimdL>(a: T, b: T, c: T) -> T {
+    let f: T = simdl_andn(a, b);
+    let t: T = crate::intrinsics::simd::simd_and(a, c);
+    crate::intrinsics::simd::simd_or(f, t)
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
 pub(super) const unsafe fn simdl_bitset<T: Copy + const SimdL>(a: T, b: T) -> T {
     crate::intrinsics::simd::simd_or(simdl_shl(simdl_splat(1), b), a)
 }
@@ -299,6 +315,27 @@ macro_rules! impl_vvvv {
 }
 
 pub(super) use impl_vvvv;
+
+macro_rules! impl_vuvv {
+    ($ft:literal, $name:ident, $op:ident, $oty:ty, $ity:ident, $ibs:expr) => {
+        #[inline(always)]
+        #[target_feature(enable = $ft)]
+        #[rustc_legacy_const_generics(1)]
+        #[unstable(feature = "stdarch_loongarch", issue = "117427")]
+        pub fn $name<const IMM: u32>(a: $oty, b: $oty) -> $oty {
+            static_assert_uimm_bits!(IMM, $ibs);
+            unsafe {
+                let a: $ity = transmute(a);
+                let b: $ity = transmute(b);
+                let c: $ity = simdl_splat(IMM.into());
+                let r: $ity = $op(a, b, c);
+                transmute(r)
+            }
+        }
+    };
+}
+
+pub(super) use impl_vuvv;
 
 macro_rules! impl_vugv {
     ($ft:literal, $name:ident, $op:ident, $oty:ty, $ity:ident, $gty:ty, $ibs:expr) => {

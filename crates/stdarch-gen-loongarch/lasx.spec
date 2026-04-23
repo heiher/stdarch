@@ -1588,11 +1588,13 @@ asm-fmts = xd, xj, ui8
 data-types = UV32QI, UV32QI, UQI
 
 /// lasx_xvbitsel_v
+impl = portable
 name = lasx_xvbitsel_v
 asm-fmts = xd, xj, xk, xa
 data-types = UV32QI, UV32QI, UV32QI, UV32QI
 
 /// lasx_xvbitseli_b
+impl = portable
 name = lasx_xvbitseli_b
 asm-fmts = xd, xj, ui8
 data-types = UV32QI, UV32QI, UV32QI, USI
