@@ -2307,6 +2307,7 @@ asm-fmts = xd, xj, xk
 data-types = V16HI, V16HI, V16HI, V16HI
 
 /// lasx_xvshuf4i_d
+impl = portable
 name = lasx_xvshuf4i_d
 asm-fmts = xd, xj, ui8
 data-types = V4DI, V4DI, V4DI, USI

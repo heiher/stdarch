@@ -527,3 +527,4 @@ lasx_xvpackod_d
 lasx_xvshuf4i_b
 lasx_xvshuf4i_h
 lasx_xvshuf4i_w
+lasx_xvshuf4i_d
