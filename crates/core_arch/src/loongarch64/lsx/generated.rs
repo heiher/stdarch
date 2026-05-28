@@ -179,14 +179,6 @@ unsafe extern "unadjusted" {
     fn __lsx_vshuf4i_h(a: __v8i16, b: u32) -> __v8i16;
     #[link_name = "llvm.loongarch.lsx.vshuf4i.w"]
     fn __lsx_vshuf4i_w(a: __v4i32, b: u32) -> __v4i32;
-    #[link_name = "llvm.loongarch.lsx.vclo.b"]
-    fn __lsx_vclo_b(a: __v16i8) -> __v16i8;
-    #[link_name = "llvm.loongarch.lsx.vclo.h"]
-    fn __lsx_vclo_h(a: __v8i16) -> __v8i16;
-    #[link_name = "llvm.loongarch.lsx.vclo.w"]
-    fn __lsx_vclo_w(a: __v4i32) -> __v4i32;
-    #[link_name = "llvm.loongarch.lsx.vclo.d"]
-    fn __lsx_vclo_d(a: __v2i64) -> __v2i64;
     #[link_name = "llvm.loongarch.lsx.vfcvt.h.s"]
     fn __lsx_vfcvt_h_s(a: __v4f32, b: __v4f32) -> __v8i16;
     #[link_name = "llvm.loongarch.lsx.vfcvt.s.d"]
@@ -1599,34 +1591,6 @@ pub fn lsx_vshuf4i_h<const IMM8: u32>(a: m128i) -> m128i {
 pub fn lsx_vshuf4i_w<const IMM8: u32>(a: m128i) -> m128i {
     static_assert_uimm_bits!(IMM8, 8);
     unsafe { transmute(__lsx_vshuf4i_w(transmute(a), IMM8)) }
-}
-
-#[inline]
-#[target_feature(enable = "lsx")]
-#[unstable(feature = "stdarch_loongarch", issue = "117427")]
-pub fn lsx_vclo_b(a: m128i) -> m128i {
-    unsafe { transmute(__lsx_vclo_b(transmute(a))) }
-}
-
-#[inline]
-#[target_feature(enable = "lsx")]
-#[unstable(feature = "stdarch_loongarch", issue = "117427")]
-pub fn lsx_vclo_h(a: m128i) -> m128i {
-    unsafe { transmute(__lsx_vclo_h(transmute(a))) }
-}
-
-#[inline]
-#[target_feature(enable = "lsx")]
-#[unstable(feature = "stdarch_loongarch", issue = "117427")]
-pub fn lsx_vclo_w(a: m128i) -> m128i {
-    unsafe { transmute(__lsx_vclo_w(transmute(a))) }
-}
-
-#[inline]
-#[target_feature(enable = "lsx")]
-#[unstable(feature = "stdarch_loongarch", issue = "117427")]
-pub fn lsx_vclo_d(a: m128i) -> m128i {
-    unsafe { transmute(__lsx_vclo_d(transmute(a))) }
 }
 
 #[inline]

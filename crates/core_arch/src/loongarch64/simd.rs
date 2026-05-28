@@ -92,6 +92,12 @@ pub(super) const unsafe fn simd_bitset<T: Copy + const SimdExt>(a: T, b: T) -> T
 
 #[inline(always)]
 #[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simd_ctlo<T: Copy + const SimdExt>(a: T) -> T {
+    is::simd_ctlz(ls::simd_not(a))
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
 pub(super) const unsafe fn simd_fmsub<T: Copy>(a: T, b: T, c: T) -> T {
     is::simd_fma(a, b, is::simd_neg(c))
 }
