@@ -203,6 +203,8 @@ lsx_vbitrevi_b
 lsx_vbitrevi_h
 lsx_vbitrevi_w
 lsx_vbitrevi_d
+lsx_vbitsel_v
+lsx_vbitseli_b
 lsx_vsadd_b
 lsx_vsadd_h
 lsx_vsadd_w
@@ -512,6 +514,8 @@ lasx_xvbitrevi_b
 lasx_xvbitrevi_h
 lasx_xvbitrevi_w
 lasx_xvbitrevi_d
+lasx_xvbitsel_v
+lasx_xvbitseli_b
 lasx_xvsadd_b
 lasx_xvsadd_h
 lasx_xvsadd_w

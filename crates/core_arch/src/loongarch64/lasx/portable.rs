@@ -876,6 +876,7 @@ impl_vsv!("lasx", lasx_xvmini_h, simd_imin, m256i, i16x16, 5);
 impl_vsv!("lasx", lasx_xvmini_w, simd_imin, m256i, i32x8, 5);
 impl_vsv!("lasx", lasx_xvmini_d, simd_imin, m256i, i64x4, 5);
 
+impl_vvvv!("lasx", lasx_xvbitsel_v, simd_ext_bitsel, m256i, u8x32);
 impl_vvvv!("lasx", lasx_xvmadd_b, simd_ext_madd, m256i, i8x32);
 impl_vvvv!("lasx", lasx_xvmadd_h, simd_ext_madd, m256i, i16x16);
 impl_vvvv!("lasx", lasx_xvmadd_w, simd_ext_madd, m256i, i32x8);
@@ -892,6 +893,8 @@ impl_vvvv!("lasx", lasx_xvfnmadd_s, simd_ext_fnmadd, m256, f32x8);
 impl_vvvv!("lasx", lasx_xvfnmadd_d, simd_ext_fnmadd, m256d, f64x4);
 impl_vvvv!("lasx", lasx_xvfnmsub_s, simd_ext_fnmsub, m256, f32x8);
 impl_vvvv!("lasx", lasx_xvfnmsub_d, simd_ext_fnmsub, m256d, f64x4);
+
+impl_vvuv!("lasx", lasx_xvbitseli_b, simd_ext_bitseli, m256i, u8x32, 8);
 
 impl_vugv!("lasx", lasx_xvinsgr2vr_w, simd_insert, m256i, i32x8, i32, 3);
 impl_vugv!("lasx", lasx_xvinsgr2vr_d, simd_insert, m256i, i64x4, i64, 2);

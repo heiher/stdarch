@@ -101,6 +101,18 @@ pub(super) const unsafe fn simd_ext_bitset<T: Copy + const SimdExt>(a: T, b: T) 
 
 #[inline(always)]
 #[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simd_ext_bitsel<T: Copy + const SimdExt>(a: T, b: T, c: T) -> T {
+    simd_or(simd_ext_andn(c, a), simd_and(c, b))
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
+pub(super) const unsafe fn simd_ext_bitseli<T: Copy + const SimdExt>(a: T, b: T, c: T) -> T {
+    simd_or(simd_ext_andn(a, b), simd_and(a, c))
+}
+
+#[inline(always)]
+#[rustc_const_unstable(feature = "stdarch_const_helpers", issue = "none")]
 pub(super) const unsafe fn simd_ext_ctlo<T: Copy + const SimdExt>(a: T) -> T {
     simd_ctlz(simd_ext_not(a))
 }
@@ -600,6 +612,21 @@ macro_rules! impl_vvvv {
 pub(super) use impl_vvvv;
 
 macro_rules! impl_vvuv {
+    ($ft:literal, $name:ident, $op:ident, $oty:ty, $ity:ident, $ibs:expr) => {
+        #[inline]
+        #[target_feature(enable = $ft)]
+        #[stable(feature = "stdarch_loongarch_simd", since = "CURRENT_RUSTC_VERSION")]
+        pub fn $name<const IMM: u32>(a: $oty, b: $oty) -> $oty {
+            static_assert_uimm_bits!(IMM, $ibs);
+            unsafe {
+                let a: $ity = transmute(a);
+                let b: $ity = transmute(b);
+                let c: $ity = simd_ext_splat(IMM.into());
+                let r: $ity = $op(a, b, c);
+                transmute(r)
+            }
+        }
+    };
     ($ft:literal, $name:ident, $op:ident, $oty:ty, $ity:ident, $ibs:expr, const) => {
         #[inline]
         #[target_feature(enable = $ft)]

@@ -550,6 +550,7 @@ impl_vsv!("lsx", lsx_vmini_h, simd_imin, m128i, i16x8, 5);
 impl_vsv!("lsx", lsx_vmini_w, simd_imin, m128i, i32x4, 5);
 impl_vsv!("lsx", lsx_vmini_d, simd_imin, m128i, i64x2, 5);
 
+impl_vvvv!("lsx", lsx_vbitsel_v, simd_ext_bitsel, m128i, u8x16);
 impl_vvvv!("lsx", lsx_vmadd_b, simd_ext_madd, m128i, i8x16);
 impl_vvvv!("lsx", lsx_vmadd_h, simd_ext_madd, m128i, i16x8);
 impl_vvvv!("lsx", lsx_vmadd_w, simd_ext_madd, m128i, i32x4);
@@ -567,6 +568,7 @@ impl_vvvv!("lsx", lsx_vfnmadd_d, simd_ext_fnmadd, m128d, f64x2);
 impl_vvvv!("lsx", lsx_vfnmsub_s, simd_ext_fnmsub, m128, f32x4);
 impl_vvvv!("lsx", lsx_vfnmsub_d, simd_ext_fnmsub, m128d, f64x2);
 
+impl_vvuv!("lsx", lsx_vbitseli_b, simd_ext_bitseli, m128i, u8x16, 8);
 impl_vvuv!("lsx", lsx_vshuf4i_d, simd_ext_shuf4i_d, m128i, i64x2, 8, const);
 
 impl_vugv!("lsx", lsx_vinsgr2vr_b, simd_insert, m128i, i8x16, i32, 4);
